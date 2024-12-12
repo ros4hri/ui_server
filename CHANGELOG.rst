@@ -2,8 +2,8 @@
 Changelog for package ui_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.0 (2024-12-12)
+------------------
 * enable linting tests
 * add proprietary license
 * remove launch file
