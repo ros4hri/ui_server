@@ -36,4 +36,10 @@ if(pal_module_cmake_FOUND)
   )
 endif()
 
+# Testing
+if(BUILD_TESTING)
+  ament_auto_find_test_dependencies()
+  ament_lint_auto_find_test_dependencies()
+endif()
+
 ament_auto_package()
