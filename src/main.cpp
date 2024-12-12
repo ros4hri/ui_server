@@ -15,7 +15,6 @@
 
 int main(int argc, char * argv[])
 {
-
   qputenv("QML_XHR_ALLOW_FILE_READ", QString("1").toUtf8());
 
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
