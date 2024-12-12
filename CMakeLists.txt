@@ -30,16 +30,10 @@ install(
   DESTINATION lib/${PROJECT_NAME}
 )
 
-# Additional install
-install(
-  DIRECTORY launch config
-  DESTINATION share/${PROJECT_NAME}
-)
-
 if(pal_module_cmake_FOUND)
   pal_register_modules(
     module/ui_server.yaml
   )
 endif()
 
-ament_package()
+ament_auto_package()
