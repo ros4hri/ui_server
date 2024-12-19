@@ -2,6 +2,11 @@
 Changelog for package ui_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix module: ui_server use ros2 run, not launch
+* Contributors: Séverin Lemaignan
+
 0.1.0 (2024-12-12)
 ------------------
 * enable linting tests
