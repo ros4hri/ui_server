@@ -1,2 +1,2 @@
 ui_server:
-  launch: "ui_server ui_server.launch.py"
+  run: "ui_server ui_server"
