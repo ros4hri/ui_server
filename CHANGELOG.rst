@@ -2,8 +2,8 @@
 Changelog for package ui_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.0 (2025-03-31)
+------------------
 * fix the UI setting and state updating code
   Updated accordingly the README
 * [doc] expand documentation
