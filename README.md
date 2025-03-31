@@ -30,7 +30,19 @@ you can for instance load one (or several) QML modules (for instance, with a
 library of QML components you want to share across several applications), and
 then refer to these components without having to re-import the path everytime.
 
+- `/ui/update_state` (`ui_msgs/SetUiFragment`): use this service to update the
+  state of the UI. Typically, you pass a small javascript snippet, to be executed in
+  the context of the current QML UI.
+
+  Importantly, any javacript function call **must** be prefixed with `this.`,
+  as visible in the example below.
+
+  Note that calling this service without first calling `/ui/set_fragment` will
+  cause an error.
+
 ## Testing
+
+### Simple UI fragment
 
 Once running, executing the following service call should display a red
 rectangle, 150x150px, in the top left corner of the external display:
@@ -39,3 +51,23 @@ rectangle, 150x150px, in the top left corner of the external display:
 ros2 service call /ui/set_fragment ui_msgs/srv/SetUiFragment "qml_import_path: ''
 qml_fragment: 'import QtQuick 2.15; Rectangle{color:\"red\";width:150;height:150}'"
 ```
+
+### Updating state
+
+For instance, assuming the following QML fragment has been set:
+
+```
+ros2 service call /ui/set_fragment ui_msgs/srv/SetUiFragment "qml_import_path: ''
+qml_fragment: 'import QtQuick 2.15; Rectangle{color:\"red\";width:150;height:150;function updateColor(c){this.color=c}}'"
+```
+
+You can then call the following service to change the color of the rectangle to
+blue:
+
+```
+ros2 service call /ui/update_state ui_msgs/srv/SetUiFragment "qml_fragment: 'this.updateColor(\"blue\")'"
+```
+
+
+
+

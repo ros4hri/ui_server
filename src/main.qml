@@ -37,9 +37,28 @@ ApplicationWindow {
         fillMode: Image.PreserveAspectCrop
     }
 
-    Loader {
+    Item {
         id: user_content
+
         anchors.fill: parent
+
+        function reset() {
+            for (var i = 0; i < user_content.children.length; i++) {
+                user_content.children[i].destroy();
+            }
+        }
+
+        function updateState(qml_fragment) {
+            if (user_content.children.length == 0) {
+                console.log("No QML content to update -- have you set the UI fragment yet?");
+                return;
+            }
+
+            console.log("Updating QML state with: " + qml_fragment);
+            var user_object = user_content.children[0];
+
+            (new Function(qml_fragment)).call(user_object);
+        }
 
     }
 
@@ -48,13 +67,19 @@ ApplicationWindow {
         service: "/ui/set_fragment"
 
        onRequestReceived: {
-           console.log("Setting QML fragment to: " + qml_fragment)
-           var component = Qt.createQmlObject(qml_fragment, _ui_server);
-           if (component.status === Component.Ready) {
-               user_content.sourceComponent = component;
-           } else if (component.status === Component.Error) {
-               console.log("Error loading component:", component.errorString());
-           }
+           user_content.reset();
+           console.log("Setting QML fragment to:\n===============\n" +
+                       qml_fragment + "\n===============\n");
+           Qt.createQmlObject(qml_fragment, user_content);
+       }
+    }
+
+    SetUiFragmentService {
+        id: update_state
+        service: "/ui/update_state"
+
+       onRequestReceived: {
+           user_content.updateState(qml_fragment);
        }
     }
 
