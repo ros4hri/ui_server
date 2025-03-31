@@ -2,6 +2,13 @@
 Changelog for package ui_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix the UI setting and state updating code
+  Updated accordingly the README
+* [doc] expand documentation
+* Contributors: Séverin Lemaignan
+
 0.2.0 (2024-12-19)
 ------------------
 * fix module: ui_server use ros2 run, not launch
