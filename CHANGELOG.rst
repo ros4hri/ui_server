@@ -2,6 +2,11 @@
 Changelog for package ui_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* less verbose when updating UI state
+* Contributors: Séverin Lemaignan
+
 0.3.0 (2025-03-31)
 ------------------
 * fix the UI setting and state updating code
