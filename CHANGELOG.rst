@@ -2,6 +2,11 @@
 Changelog for package ui_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* bring back *some* logging when updating UI state
+* Contributors: Séverin Lemaignan
+
 0.3.1 (2025-04-04)
 ------------------
 * less verbose when updating UI state
