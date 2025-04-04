@@ -2,8 +2,8 @@
 Changelog for package ui_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.1 (2025-04-04)
+------------------
 * less verbose when updating UI state
 * Contributors: Séverin Lemaignan
 
