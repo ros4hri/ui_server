@@ -12,6 +12,7 @@ ament_auto_find_build_dependencies()
 
 find_package(Qt5Core REQUIRED)
 find_package(Qt5Quick REQUIRED)
+find_package(Qt5WebView REQUIRED)
 
 add_executable(${PROJECT_NAME}
   src/main.cpp
@@ -23,7 +24,7 @@ target_compile_features(${PROJECT_NAME} PUBLIC c_std_99 cxx_std_17)  # Require C
 target_compile_definitions(${PROJECT_NAME}
   PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
 target_link_libraries(${PROJECT_NAME}
-  PRIVATE Qt5::Core Qt5::Quick)
+    PRIVATE Qt5::Core Qt5::Quick Qt5::WebView)
 
 install(
   TARGETS ${PROJECT_NAME}

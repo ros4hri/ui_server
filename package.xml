@@ -19,11 +19,13 @@
   <build_depend>qtbase5-dev</build_depend>
   <build_depend>qtdeclarative5-dev</build_depend>
   <build_depend>qtmultimedia5-dev</build_depend>
+  <build_depend>libqt5webview5-dev</build_depend>
   <build_depend>pal_module_cmake</build_depend>
 
   <exec_depend>qml-module-qtquick-controls2</exec_depend>
   <exec_depend>qml-module-qtquick-window2</exec_depend>
   <exec_depend>qml-module-qtmultimedia</exec_depend>
+  <exec_depend>qml-module-qtwebview</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
