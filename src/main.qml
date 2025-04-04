@@ -54,6 +54,8 @@ ApplicationWindow {
                 return;
             }
 
+            console.log("Updating UI state: " + (qml_fragment.length > 50 ? qml_fragment.slice(0, 50) + "…" : qml_fragment));
+
             var user_object = user_content.children[0];
 
             (new Function(qml_fragment)).call(user_object);
