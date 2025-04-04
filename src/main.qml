@@ -54,7 +54,6 @@ ApplicationWindow {
                 return;
             }
 
-            console.log("Updating QML state with: " + qml_fragment);
             var user_object = user_content.children[0];
 
             (new Function(qml_fragment)).call(user_object);
