@@ -2,6 +2,13 @@
 Changelog for package ui_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* add support for inserting web views in the QML page
+  Simple example:
+  ros2 service call /ui/set_fragment ui_msgs/srv/SetUiFragment "qml_fragment: 'import QtWebView 1.15;WebView {anchors.fill:parent;url:\"https://lemonde.fr\"}'"
+* Contributors: Séverin Lemaignan
+
 0.3.2 (2025-04-04)
 ------------------
 * bring back *some* logging when updating UI state
