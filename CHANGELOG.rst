@@ -2,6 +2,11 @@
 Changelog for package ui_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* depends on libqt5multimedia5-plugins, to ensure we can play videos
+* Contributors: Séverin Lemaignan
+
 0.4.0 (2025-05-19)
 ------------------
 * add support for inserting web views in the QML page
