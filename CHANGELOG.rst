@@ -2,8 +2,8 @@
 Changelog for package ui_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.4.1 (2025-05-20)
+------------------
 * depends on libqt5multimedia5-plugins, to ensure we can play videos
 * Contributors: Séverin Lemaignan
 
