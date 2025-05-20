@@ -22,6 +22,7 @@
   <build_depend>libqt5webview5-dev</build_depend>
   <build_depend>pal_module_cmake</build_depend>
 
+  <exec_depend>libqt5multimedia5-plugins</exec_depend>
   <exec_depend>qml-module-qtquick-controls2</exec_depend>
   <exec_depend>qml-module-qtquick-window2</exec_depend>
   <exec_depend>qml-module-qtmultimedia</exec_depend>
