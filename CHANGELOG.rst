@@ -2,8 +2,8 @@
 Changelog for package ui_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.5.0 (2025-06-02)
+------------------
 * make it possible to start in windowed mode
   This is much more convenient when developing/debugging
 * Contributors: Séverin Lemaignan
