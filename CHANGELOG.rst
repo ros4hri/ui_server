@@ -2,6 +2,12 @@
 Changelog for package ui_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* make it possible to start in windowed mode
+  This is much more convenient when developing/debugging
+* Contributors: Séverin Lemaignan
+
 0.4.1 (2025-05-20)
 ------------------
 * depends on libqt5multimedia5-plugins, to ensure we can play videos
