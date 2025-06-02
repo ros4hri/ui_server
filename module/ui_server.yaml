@@ -1,2 +1,2 @@
 ui_server:
-  run: "ui_server ui_server"
+  run: "ui_server ui_server --fullscreen"

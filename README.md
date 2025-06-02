@@ -10,8 +10,16 @@ The node exposes
 
 ### Usage
 
+To start in windowed mode:
+
 ```bash
 ros2 run ui_server ui_server
+```
+
+To start in fullscreen mode:
+
+```bash
+ros2 run ui_server ui_server --fullscreen
 ```
 
 ### Services

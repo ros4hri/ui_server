@@ -22,7 +22,7 @@ ApplicationWindow {
     id: _ui_server
     width: 1280 // tiago pro resolution
     height: 800
-    visibility: "FullScreen"
+    visibility: (Qt.application.arguments.indexOf("--fullscreen") !== -1) ? Window.FullScreen : Window.Windowed
     visible: true
     color: "white"
     title: qsTr("Display manager")
@@ -82,6 +82,15 @@ ApplicationWindow {
        onRequestReceived: {
            user_content.updateState(qml_fragment);
        }
+    }
+
+    Component.onCompleted: {
+        console.log("Display manager ready. Listening for UI fragments on /ui/set_fragment and /ui/update_state");
+        if (Qt.application.arguments.indexOf("--fullscreen") !== -1) {
+            console.log("Running in fullscreen mode");
+        } else {
+            console.log("Running in windowed mode (use --fullscreen to run in fullscreen)");
+        }
     }
 
 }
