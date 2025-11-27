@@ -1,10 +1,15 @@
 # UI Server
 
+![Screenshot of a possible UI](doc/default_gui_task.jpg)
+
 ROS 2 UI 'server' that manage user interfaces.
 
 Uses QML as UI description language.
 
-The node exposes
+The node exposes two services to set the UI fragment to be displayed, and
+to update the state of the current UI by executing javascript snippets.
+
+![UI Server architecture](doc/architecture.png)
 
 ## ROS API
 
