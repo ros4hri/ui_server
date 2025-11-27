@@ -34,10 +34,13 @@ ros2 run ui_server ui_server --fullscreen
 
 ### Services
 
-- `/ui/set_fragment` (`ui_msgs/SetUiFragment`): instructs the UI server to
-  render the provided QML snippet onto the display. This service has two fields:
-   - `qml_import_path` (optional): path to a QML module that is added to the import
-     path of the qml engine.
+- `/ui/set_fragment`
+  ([`ui_msgs/SetUiFragment`](https://github.com/ros4hri/ui_msgs/blob/main/srv/SetUiFragment.srv)):
+  instructs the UI server to render the provided QML snippet onto the display.
+
+  This service has two fields:
+   - `qml_import_path` (optional): path to a QML module that is added to the
+     import path of the qml engine.
    - `qml_fragment` (optional): a QML string, to be rendered.
 
 The qml fragment must include all required imports. It can optionally include
@@ -48,9 +51,10 @@ you can for instance load one (or several) QML modules (for instance, with a
 library of QML components you want to share across several applications), and
 then refer to these components without having to re-import the path everytime.
 
-- `/ui/update_state` (`ui_msgs/SetUiFragment`): use this service to update the
-  state of the UI. Typically, you pass a small javascript snippet, to be executed in
-  the context of the current QML UI.
+- `/ui/update_state`
+  ([`ui_msgs/SetUiFragment`](https://github.com/ros4hri/ui_msgs/blob/main/srv/SetUiFragment.srv)):
+  use this service to update the state of the UI. Typically, you pass a small
+  javascript snippet, to be executed in the context of the current QML UI.
 
   Importantly, any javacript function call **must** be prefixed with `this.`,
   as visible in the example below.
