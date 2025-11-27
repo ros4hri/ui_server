@@ -16,6 +16,25 @@ to update the state of the current UI by executing javascript snippets.
 - **documentation**: https://docs.pal-robotics.com/edge/ui
 - **tutorial**: https://docs.pal-robotics.com/edge/ui/building-first-touchscreen-interaction
 
+## Installation
+
+### Pre-requisites
+
+- ROS 2 Humble or later
+- Qt 5.15 (Qt 6 support not tested yet)
+- [`ros_qml_plugin`](https://github.com/ros4hri/ros-qml-plugin) package
+- [`ui_msgs`](https://github.com/ros4hri/ui_msgs) package
+
+### Build and install
+
+```bash
+# First, clone the repository into your ROS 2 workspace src folder
+
+# Then:
+cd ~/ros2_ws
+colcon build --packages-select ui_server
+```
+
 ## ROS API
 
 ### Usage
