@@ -6,10 +6,15 @@ ROS 2 UI 'server' that manage user interfaces.
 
 Uses QML as UI description language.
 
+# Overview
+
 The node exposes two services to set the UI fragment to be displayed, and
 to update the state of the current UI by executing javascript snippets.
 
 ![UI Server architecture](doc/architecture.png)
+
+- **documentation**: https://docs.pal-robotics.com/edge/ui
+- **tutorial**: https://docs.pal-robotics.com/edge/ui/building-first-touchscreen-interaction
 
 ## ROS API
 
