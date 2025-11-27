@@ -2,8 +2,8 @@
 Changelog for package ui_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.6.1 (2025-11-27)
+------------------
 * relicense under Apache 2.0
 * Contributors: Séverin Lemaignan
 
