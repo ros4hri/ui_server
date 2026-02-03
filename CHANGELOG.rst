@@ -2,8 +2,8 @@
 Changelog for package ui_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.7.0 (2026-02-03)
+------------------
 * make pal_module_cmake optional
 * [doc] Add installation and pre-requisites notes
 * [doc] small improvements to the README
