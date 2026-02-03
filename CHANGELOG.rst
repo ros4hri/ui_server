@@ -2,6 +2,15 @@
 Changelog for package ui_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* make pal_module_cmake optional
+* [doc] Add installation and pre-requisites notes
+* [doc] small improvements to the README
+* [doc] small improvements to the README
+* [doc] small improvements to the README
+* Contributors: Séverin Lemaignan
+
 0.6.1 (2025-11-27)
 ------------------
 * relicense under Apache 2.0
